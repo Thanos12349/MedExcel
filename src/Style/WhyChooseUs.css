@@ -1,0 +1,47 @@
+.choose-root {
+  background: #ffffff;
+  padding: 60px 20px;
+}
+
+.choose-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.choose-title {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.choose-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.choose-item {
+  background: #f9fafb;
+  padding: 25px 20px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.choose-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+}
+
+.choose-icon {
+  font-size: 36px;
+  color: #06b6d4;
+  margin-bottom: 12px;
+}
+
+.choose-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}

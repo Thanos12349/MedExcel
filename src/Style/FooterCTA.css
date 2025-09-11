@@ -1,0 +1,38 @@
+.footer-cta-root {
+  background: linear-gradient(135deg, #06b6d4, #0f172a);
+  padding: 50px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-cta-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.footer-cta-text {
+  font-size: clamp(20px, 4vw, 32px);
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.footer-cta-btn {
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.footer-cta-btn:hover {
+  background: #0f172a;
+  color: #ffffff;
+}

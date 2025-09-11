@@ -1,0 +1,237 @@
+
+.explore-courses {
+  padding: 2rem;
+  background: #fff;
+}
+
+.explore-header h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.explore-header p {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+.course-tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 1rem;
+  flex-wrap: wrap; }
+
+.course-tabs button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  color: #555;
+}
+
+.course-tabs .active {
+  color: teal;
+  border-bottom: 2px solid black;
+}
+
+.view-all {
+  margin-left: auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 16px;
+  border-radius: 6px;
+}
+
+.duration-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.duration-buttons button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  color: #555;
+  cursor: pointer;
+}
+
+.duration-buttons button.active {
+  background: teal;
+  color: white;
+}
+
+.carousel-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+  gap: 20px;
+}
+
+.course-card {
+  width: 540px;
+  min-width: 200px;
+  flex: 0 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  text-align: center;
+  color: #555;
+}
+
+.course-card img {
+  width: 60%;
+  border-radius: 10px;
+}
+
+.duration-price {
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.course-content {
+  text-align: left;
+  padding-left: 15px;
+  margin: 8px 0;
+}
+
+.course-content li {
+  font-size: 13px;
+  margin-bottom: 3px;
+}
+
+.eligibility {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.enroll-btn {
+  background: teal;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  padding: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  color: teal;
+}
+
+.carousel-btn.left {
+  left: 10px;
+  color: teal;
+}
+
+.carousel-btn.right {
+  right: 10px;
+}
+
+.carousel-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: teal;
+}
+
+@media (max-width: 576px) {
+  .explore-header h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .explore-header p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .course-tabs {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .course-card {
+    width: 300px;
+    min-width: 30%;  
+    margin: 0 auto;
+  }
+
+  .view-all {
+    margin: 10px auto;
+    display: block;
+  }
+
+  .duration-buttons {
+    justify-content: center;
+    gap: 4px;
+  }
+
+  .carousel-btn {
+    font-size: 12px;
+    padding: 6px;
+    top: 45%;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .explore-header h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .course-tabs {
+    justify-content: center;
+  }
+
+  .duration-buttons {
+    justify-content: center;
+    gap: 4px;
+    width: 100%;
+  }
+
+  .course-card {
+    min-width: 40%;
+  }
+
+  .carousel-btn {
+    font-size: 20px;
+    padding: 7px;
+    top: 42%;
+  }
+}
+
+@media (min-width: 992px) {
+  .course-card {
+    min-width: 250px;
+  }
+}

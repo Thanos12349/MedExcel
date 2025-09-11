@@ -1,0 +1,64 @@
+.programs-root {
+  background: #f8fafc;
+  padding: 60px 20px;
+}
+
+.programs-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.programs-title {
+  font-size: clamp(24px, 5vw, 36px);
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.programs-card {
+  background: #ffffff;
+  padding: 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.programs-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.programs-card-content h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #06b6d4;
+}
+
+.programs-cta {
+  margin-top: 20px;
+}
+
+.programs-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 25px;
+  background: #06b6d4;
+  color: #00212a;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.programs-btn:hover {
+  background: #0891b2;
+}

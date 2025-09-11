@@ -1,0 +1,38 @@
+.quick-root {
+  background: #f8fafc;
+  padding: 40px 20px;
+}
+
+.quick-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 25px;
+  text-align: center;
+}
+
+.quick-item {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.quick-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.quick-icon {
+  font-size: 36px;
+  color: #06b6d4;
+  margin-bottom: 12px;
+}
+
+.quick-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
