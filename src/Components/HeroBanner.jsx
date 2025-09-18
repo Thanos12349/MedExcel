@@ -4,16 +4,6 @@ import "../Style/HeroBanner.css";
 const HeroBanner = ({ onExplore, onPartner }) => {
   return (
     <section className="hero-root">
-
-      <div
-        className="hero-bg"
-        style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1581091215367-59ab6dcef3f5?q=80&w=1920&auto=format&fit=crop')",
-        }}
-      ></div>
-      <div className="hero-overlay"></div>
-
       <div className="hero-container">
         <div className="hero-content">
           <h1 className="hero-tagline">
@@ -34,6 +24,13 @@ const HeroBanner = ({ onExplore, onPartner }) => {
               Partner with Us
             </button>
           </div>
+        </div>
+
+        <div className="hero-image">
+          <img
+            src="/images/banner-main.png"
+            alt="Healthcare Professionals"
+          />
         </div>
       </div>
     </section>
